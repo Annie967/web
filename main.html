@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        nav {
+            width: 25%;
+            background-color: #f0f0f0;
+            padding: 15px;
+        }
+        main {
+            width: 75%;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to XYZ College</h1>
+</header>
+
+<div class="container">
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Welcome to XYZ College</h2>
+        <p>This is the main content area. Here you can provide information about the college, courses, and other details.</p>
+
+        <section id="about">
+            <h3>About Us</h3>
+            <p>XYZ College has been a leader in education for over 50 years.</p>
+        </section>
+
+        <section id="courses">
+            <h3>Courses</h3>
+            <p>We offer a variety of courses in science, arts, and technology.</p>
+        </section>
+
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>You can reach us at contact@xyzcollege.edu.</p>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
