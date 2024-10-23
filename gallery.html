@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Light gray background */
+            margin: 0;
+            padding: 20px;
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Full height */
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px; /* Space between title and gallery */
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+            gap: 15px; /* Space between images */
+            max-width: 800px; /* Limit maximum width */
+            width: 100%; /* Full width */
+        }
+
+        .gallery img {
+            width: 100%; /* Make images responsive */
+            border-radius: 8px; /* Rounded corners */
+            transition: transform 0.3s; /* Smooth zoom effect */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Image Gallery</h1>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+    </div>
+</body>
+</html>
